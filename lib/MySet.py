@@ -17,4 +17,10 @@ class MySet:
     
     def size(self):
         return len(self.dictionary)
+    
+    def clear(self):
+        self.dictionary.clear()
+
+    def __str__(self):
+        return 'MySet: {' + ','.join([str(key) for key in self.dictionary.keys()]) + '}'
 
